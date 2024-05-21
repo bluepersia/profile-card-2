@@ -1,0 +1,31 @@
+:root 
+{
+    --cmp-c-1: hsl(185, 75%, 39%);
+    --cmp-c-2: hsl(229, 23%, 23%);
+    --cmp-c-3: hsl(227, 10%, 46%);
+
+    --cmp-c-4: hsl(0, 0%, 59%);
+
+    --cmp-f-1: "Kumbh Sans", sans-serif;
+}
+
+body {
+    margin:0;
+    background-color: var(--cmp-c-1);
+    padding: 0 6.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}

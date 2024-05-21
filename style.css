@@ -3,8 +3,8 @@
     --cmp-c-1: hsl(185, 75%, 39%);
     --cmp-c-2: hsl(229, 23%, 23%);
     --cmp-c-3: hsl(227, 10%, 46%);
-
     --cmp-c-4: hsl(0, 0%, 59%);
+    --cmp-c-5: white;
 
     --cmp-f-1: "Kumbh Sans", sans-serif;
 }
@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 * {
     box-sizing: border-box;
@@ -28,4 +29,31 @@ body {
 
 * :last-child {
     margin-bottom: 0;
+}
+
+
+/* Typography */
+
+html {
+    font-size: 14px;
+}
+
+.cmp 
+{
+    font-family: var(--cmp-f-1);
+    color: var(--cmp-c-3);
+}
+
+.cmp h1 {
+    color: var(--cmp-c-2)
+}
+
+.cmp .cmp__age {
+    font-weight: 400;
+    color: var(--cmp-c-3);
+}
+
+.cmp__stat-key {
+    font-size: .71rem;
+    letter-spacing: .15em;
 }

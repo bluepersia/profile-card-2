@@ -5,6 +5,7 @@
     --cmp-c-3: hsl(227, 10%, 46%);
     --cmp-c-4: hsl(0, 0%, 59%);
     --cmp-c-5: white;
+    --cmp-c-6: hsl(228, 9%, 92%);
 
     --cmp-f-1: "Kumbh Sans", sans-serif;
 }
@@ -45,7 +46,8 @@ html {
 }
 
 .cmp h1 {
-    color: var(--cmp-c-2)
+    color: var(--cmp-c-2);
+    font-size: 1.28rem;
 }
 
 .cmp .cmp__age {
@@ -56,4 +58,64 @@ html {
 .cmp__stat-key {
     font-size: .71rem;
     letter-spacing: .15em;
+}
+
+
+/* Layout */
+
+.cmp 
+{
+    max-width: 350px;
+    text-align: center;
+    background-color: var(--cmp-c-5);
+    border-radius: 15px;
+}
+
+.cmp__header {
+    background: url(./images/bg-pattern-card.svg);
+    padding: 1.57em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cmp__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   position: relative;
+   top: 5em;
+    border-radius: 50%;
+    border:solid 5px var(--cmp-c-5);
+}
+
+.cmp__main {
+    padding: 5.14em 0 1.78em;
+    border-bottom: 1px solid var(--cmp-c-6);
+}
+
+.cmp__person-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .71em;
+}
+
+.cmp__name {
+    margin-bottom: 0;
+}
+
+.cmp__age {
+    margin-top: 0;
+}
+
+.cmp__location {
+    margin-top: .5em;
+}
+
+
+.cmp__footer {
+    display: flex;
+    align-items: center;
+    gap: 3.28em;
+    padding: 1.71em 2.8em;
 }
